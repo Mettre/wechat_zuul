@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mettre</groupId>
-    <artifactId>wechat</artifactId>
+    <artifactId>wechat_zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gateway</name>
     <description>微信网关</description>
