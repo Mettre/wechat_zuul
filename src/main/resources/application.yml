@@ -6,6 +6,11 @@ server:
     port: 8887 #启动端口
 
 zuul:
+    host:
+        max-per-route-connections: 60000
+        socket-timeout-millis: 60000
+        connect-timeout-millis: 60000
+
     routes:
           account:
                 path: /account/**
@@ -15,6 +20,11 @@ zuul:
                 path: /usually/**
           comment:
                 path: /comment/**
+
+
+ribbon:
+  ReadTimeout: 60000  # 单位毫秒数
+  SocketTimeout: 60000
 
 eureka:
   client:
